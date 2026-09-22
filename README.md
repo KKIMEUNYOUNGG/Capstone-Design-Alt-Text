@@ -25,7 +25,7 @@ CSV는 **이미지 1장당 1행**으로 작성한다. 상품 1개당 2행이므�
 
 | 카테고리 | 담당 | 영문 폴더명 | 수집 페이지 |
 | --- | --- | --- | --- |
-| 간편식·밀키트·샐러드 | 공통 | `ready_meals` | [카테고리 912](https://www.kurly.com/categories/912) |
+| 간편식·밀키트·샐러드 | 공통 | `convenience_meals` | [카테고리 912](https://www.kurly.com/categories/912) |
 | 과일·견과·쌀 | 윤서현 | `fruits_nuts_rice` | [카테고리 908](https://www.kurly.com/categories/908) |
 | 베이커리 | 조해인 | `bakery` | [카테고리 915](https://www.kurly.com/categories/915) |
 | 채소 | 김은영 | `vegetables` | [카테고리 907](https://www.kurly.com/categories/907) |
@@ -39,8 +39,8 @@ CSV는 **이미지 1장당 1행**으로 작성한다. 상품 1개당 2행이므�
 ```text
 Capstone-Design-Alt-Text/
 ├── README.md
-├── ready_meals/
-│   ├── ready_meals_metadata.csv
+├── convenience_meals/
+│   ├── convenience_meals_metadata.csv
 │   └── images/
 ├── fruits_nuts_rice/
 │   ├── fruits_nuts_rice_metadata.csv

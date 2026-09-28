@@ -34,7 +34,7 @@
 
 예시:
 
-| category | product_id | image_order | image_name | image_path | qwen2_5_alt | hyperclovax_alt |
+| category | product_id | image_order | prev_alt_KOR | 모델 |
 |---|---|---|---|---|---|---|
 
 ## 결과 통합

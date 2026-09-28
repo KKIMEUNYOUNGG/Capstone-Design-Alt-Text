@@ -14,34 +14,38 @@
 
 ---
 
-## Models
+## 모델 및 담당자
 
-현재 다음 모델을 사용했음.
+| 담당자 | 실행 모델 | 결과 파일 |
+|---|---|---|
+| 은영 | Qwen2.5-VL-3B-Instruct, HyperCLOVAX-SEED-Vision-Instruct-3B | `alt_eunyoung.csv` |
+| 서현 | BLIP-2, Qwen3-VL | `alt_seohyun.csv` |
+| 해인 | BLIP, GIT, ViT-GPT2 | `alt_haein.csv` |
 
-- Qwen2.5-VL-3B-Instruct
-- HyperCLOVAX-SEED-Vision-Instruct-3B
+## 결과 파일 구성
 
-동일한 이미지와 동일한 프롬프트를 사용해 모델별 대체텍스트를 생성했음.
+각 담당자는 자신이 실행한 모든 모델의 생성 결과를 하나의 CSV 파일에 저장합니다.
 
----
+- 파일명: `alt_자기이름.csv`
+- 이미지 한 장당 한 행으로 구성
+- 공통 정보 컬럼명은 노션에 정리된 기준으로 통일
+- 실행한 모델별 대체텍스트를 각각 별도의 컬럼으로 추가
+- 테스트 데이터가 아닌 전체 이미지 실행 결과 저장
 
-## Dataset
+예시:
 
-마켓컬리 상품 페이지에서 수집한 이미지를 사용했음.
+| category | product_id | image_order | image_name | image_path | qwen2_5_alt | hyperclovax_alt |
+|---|---|---|---|---|---|---|
 
-```text
-bakery/
-├─ images/
-└─ bakery_metadata.csv
+## 결과 통합
 
-convenience_meals/
-├─ images/
-└─ convenience_meals_metadata.csv
+담당자별 CSV 파일을 동일한 이미지 식별자를 기준으로 병합하여 `alt_generate.csv`를 생성합니다. 최종 통합 파일에는 모든 모델의 대체텍스트 생성 결과가 각각의 컬럼으로 포함됩니다.
 
-fruits_nuts_rice/
-├─ images/
-└─ fruits_nuts_rice_metadata.csv
+## 업로드 파일
 
-vegetables/
-├─ images/
-└─ vegetables_metadata.csv
+- `alt_eunyoung.csv`
+- `alt_seohyun.csv`
+- `alt_haein.csv`
+- `alt_generate.csv`
+
+업로드 브랜치: [`vlm-alt-generation`](https://github.com/KKIMEUNYOUNGG/Capstone-Design-Alt-Text/tree/vlm-alt-generation)

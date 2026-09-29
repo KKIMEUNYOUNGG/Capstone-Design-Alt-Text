@@ -51,21 +51,24 @@
 업로드 브랜치: [`vlm-alt-generation`](https://github.com/KKIMEUNYOUNGG/Capstone-Design-Alt-Text/tree/vlm-alt-generation)
 
 ## alt_generated.csv 결측치 확인 결과
-- category             0
-- product_id           0
-- image_order          0
-- prev_alt_KOR       195
-- BLIP_ENG             0
-- BLIP_KOR             5
-- GIT_ENG              0
-- GIT_KOR              0
-- ViT-GPT2_ENG         0
-- ViT-GPT2_KOR         0
-- qwen_2.5_KOR         0
-- HyperCLOVAX_KOR      0
-- qwen_3_KOR           0
-- qwen_3_ENG           0
-- BLIP2_ENG            0
-- BLIP2_KOR            0
-- dtype: int64
+
+| 컬럼명 | 결측치 개수 |
+|---|---|
+| category | 0 |
+| product_id | 0 |
+| image_order | 0 |
+| prev_alt_KOR | 195 |
+| BLIP_ENG | 0 |
+| BLIP_KOR | 5 |
+| GIT_ENG | 0 |
+| GIT_KOR | 0 |
+| ViT-GPT2_ENG | 0 |
+| ViT-GPT2_KOR | 0 |
+| qwen_2.5_KOR | 0 |
+| HyperCLOVAX_KOR | 0 |
+| qwen_3_KOR | 0 |
+| qwen_3_ENG | 0 |
+| BLIP2_ENG | 0 |
+| BLIP2_KOR | 0 |
+| dtype: int64 |---|
 

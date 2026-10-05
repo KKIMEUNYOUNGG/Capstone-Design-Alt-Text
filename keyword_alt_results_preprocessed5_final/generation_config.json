@@ -56,8 +56,8 @@
       "qwen3": "torch.float16",
       "hyperclovax": "bf16_if_supported_else_fp16"
     },
-    "baseline_sha256": "db2e5beb7eb2be2c2d17f04be4283320d3eece47824e2fcb30686f7dd548e83c",
-    "baseline_file": "alt_preprocessed_5.csv",
+    "baseline_sha256": "431282e08563d2af972bf364e51f7add63dd3dde6cd72f1632aa222e748a5f2f",
+    "baseline_file": "alt_final.csv",
     "keyword_language": "ko",
     "keyword_display": "plain_bullets_without_json_quotes",
     "qwen_generation_lines": [
@@ -570,6 +570,38 @@
         "previous_error": "NamePreservationError: 이름 원문 또는 표식 n1가 변경됨. 영어 원문은 유지.",
         "response_sha256": "b1a8fda827542d7284d027ceafa361801fef3cc8980d5a35d02b6378e871e01d",
         "recovered_at": "2026-10-05T09:15:08.468398+00:00"
+      }
+    ],
+    "baseline_updates": [
+      {
+        "updated_at": "2026-10-05T10:14:46.432551+00:00",
+        "previous_baseline": {
+          "baseline_file": "alt_preprocessed_5.csv",
+          "baseline_sha256": "db2e5beb7eb2be2c2d17f04be4283320d3eece47824e2fcb30686f7dd548e83c"
+        },
+        "baseline": {
+          "baseline_file": "alt_final.csv",
+          "baseline_sha256": "431282e08563d2af972bf364e51f7add63dd3dde6cd72f1632aa222e748a5f2f"
+        },
+        "matched_rows": 500,
+        "refreshed_rows": 500,
+        "changed_caption_rows": 2,
+        "changed_caption_keys": [
+          {
+            "category": "bakery",
+            "model": "qwen3",
+            "product_id": "1001501168",
+            "image_order": "1"
+          },
+          {
+            "category": "bakery",
+            "model": "qwen3",
+            "product_id": "1001501168",
+            "image_order": "2"
+          }
+        ],
+        "keyword_results_preserved": true,
+        "backup_directory": "backup_before_baseline_refresh_20261005T101446263838Z"
       }
     ]
   },

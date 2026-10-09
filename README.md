@@ -5,7 +5,7 @@
 `카테고리_모델명_correct_담당자.xlsx`
 
 - 카테고리: `bakery`, `convenience_meals`, `fruits_nuts_rice`, `vegetables`
-- 모델명: `hyperclovax`, `qwen` 등 사용 모델명
+- 모델명: `hyperclovax`, `qwen3` 등 사용 모델명
 - 담당자: `은영`, `서현`, `해인`
 - 수정 파일은 `data/` 폴더에 저장
 
@@ -22,11 +22,11 @@
 | 과일·견과류·쌀 | HyperCLOVAX | 1~40번 (40개) | 해인 |
 | 과일·견과류·쌀 | HyperCLOVAX | 41~70번 (30개) | 서현 |
 | 과일·견과류·쌀 | HyperCLOVAX | 71~100번 (30개) | 은영 |
-| 과일·견과류·쌀 | Qwen | 전체 | 서현 |
+| 과일·견과류·쌀 | Qwen3 | 전체 | 서현 |
 | 채소 | HyperCLOVAX | 1~40번 (40개) | 은영 |
 | 채소 | HyperCLOVAX | 41~70번 (30개) | 서현 |
 | 채소 | HyperCLOVAX | 71~100번 (30개) | 해인 |
-| 베이커리 | 해당 모델 | 전체 | 해인 |
+| 베이커리 | Qwen3 | 전체 | 해인 |
 
 ### 3. 캡션 오류 수정 기준
 
